@@ -18,7 +18,7 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="main-nav" class="main-nav" aria-label="მთავარი ნავიგაცია">
-        <a href="#places">ადგილები</a><a href="#route">მარშრუტი</a><a href="#tips">რჩევები</a><a class="nav-cta" href="#contact">გზამკვლევის მიღება</a>
+        <a href="#gallery">ხედები</a><a href="#places">ადგილები</a><a href="#route">მარშრუტი</a><a href="#tips">რჩევები</a><a class="nav-cta" href="#contact">გზამკვლევის მიღება</a>
       </nav>
     </div>
   </header>
@@ -41,9 +41,26 @@
       <p>თბილისი კონტრასტების ქალაქია — აივნებიანი ძველი უბნებიდან თანამედროვე არქიტექტურამდე. ეს გზამკვლევი დაგეხმარება პირველი ნაბიჯების დაგეგმვაში.</p></div>
     </section>
 
+    <section class="gallery section container" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><div class="section-label">02 / ქალაქის ხედები</div><h2 id="gallery-title">თბილისი სხვადასხვა კუთხით</h2></div></div>
+      <div class="slider" role="region" aria-roledescription="კარუსელი" aria-label="თბილისის ხედები">
+        <div class="slides" id="slides" aria-live="polite">
+          <figure class="slide is-active" aria-roledescription="სლაიდი" aria-label="1 / 3"><div class="slide-art photo-oldtown" role="img" aria-label="ძველი თბილისის დეკორატიული ილუსტრაცია"></div><figcaption><strong>ძველი თბილისი</strong> — ხის აივნები და ვიწრო ქუჩები.</figcaption></figure>
+          <figure class="slide" aria-roledescription="სლაიდი" aria-label="2 / 3" hidden><div class="slide-art photo-narikala" role="img" aria-label="ნარიყალას დეკორატიული ილუსტრაცია"></div><figcaption><strong>ნარიყალა</strong> — ქალაქი ზემოდან.</figcaption></figure>
+          <figure class="slide" aria-roledescription="სლაიდი" aria-label="3 / 3" hidden><div class="slide-art photo-bridge" role="img" aria-label="მშვიდობის ხიდის დეკორატიული ილუსტრაცია"></div><figcaption><strong>მშვიდობის ხიდი</strong> — თანამედროვე თბილისის სიმბოლო.</figcaption></figure>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" type="button" id="prev" aria-label="წინა სლაიდი">←</button>
+          <div class="dots" id="dots" role="group" aria-label="სლაიდის არჩევა"></div>
+          <button class="slider-btn" type="button" id="next" aria-label="შემდეგი სლაიდი">→</button>
+          <button class="slider-btn slider-play" type="button" id="play" aria-pressed="true">პაუზა</button>
+        </div>
+      </div>
+    </section>
+
     <section class="places section" id="places" aria-labelledby="places-title">
       <div class="container">
-        <div class="section-heading"><div><div class="section-label">02 / აუცილებლად სანახავი</div><h2 id="places-title">ქალაქის რჩეული ადგილები</h2></div><p>აირჩიე ადგილი და შექმენი საკუთარი მარშრუტი.</p></div>
+        <div class="section-heading"><div><div class="section-label">03 / აუცილებლად სანახავი</div><h2 id="places-title">ქალაქის რჩეული ადგილები</h2></div><p>აირჩიე ადგილი და შექმენი საკუთარი მარშრუტი.</p></div>
         <div class="place-grid">
           <article class="place-card place-large">
             <div class="place-photo photo-oldtown" role="img" aria-label="ძველი თბილისის აივნებისა და სახლების დეკორატიული ილუსტრაცია"></div>
@@ -63,7 +80,7 @@
 
     <section class="route-section section" id="route" aria-labelledby="route-title">
       <div class="container route-layout">
-        <div><div class="section-label">03 / ნახევარი დღის გეგმა</div><h2 id="route-title">თბილისი<br><span>ფეხით</span></h2><p class="route-intro">მარტივი მარშრუტი მათთვის, ვისაც ქალაქის ცენტრის გაცნობა სურს.</p><a class="button button-dark" href="#contact">გზამკვლევის მიღება ↗</a></div>
+        <div><div class="section-label">04 / ნახევარი დღის გეგმა</div><h2 id="route-title">თბილისი<br><span>ფეხით</span></h2><p class="route-intro">მარტივი მარშრუტი მათთვის, ვისაც ქალაქის ცენტრის გაცნობა სურს.</p><a class="button button-dark" href="#contact">გზამკვლევის მიღება ↗</a></div>
         <ol class="timeline">
           <li><span class="time">10:00</span><div><h3>თავისუფლების მოედანი</h3><p>დაიწყე ცენტრალური მოედნიდან და გაუყევი ძველ ქუჩებს.</p></div></li>
           <li><span class="time">11:00</span><div><h3>აბანოთუბანი</h3><p>დაათვალიერე აგურის გუმბათები და მშვიდი ეზოები.</p></div></li>
@@ -74,7 +91,7 @@
     </section>
 
     <section class="tips section container" id="tips" aria-labelledby="tips-title">
-      <div class="section-heading"><div><div class="section-label">04 / სასარგებლო რჩევები</div><h2 id="tips-title">მცირე რჩევები,<br>უკეთესი მოგზაურობა.</h2></div></div>
+      <div class="section-heading"><div><div class="section-label">05 / სასარგებლო რჩევები</div><h2 id="tips-title">მცირე რჩევები,<br>უკეთესი მოგზაურობა.</h2></div></div>
       <div class="tip-grid">
         <article><span class="tip-number">01</span><h3>კომფორტული ფეხსაცმელი</h3><p>ძველი ქალაქის ქუჩები ზოგან ქვაფენილია და აღმართებიც შეგხვდება.</p></article>
         <article><span class="tip-number">02</span><h3>დატოვე დრო აღმოჩენისთვის</h3><p>საინტერესო ეზოები და კაფეები ხშირად მთავარ ქუჩებს მიღმაა.</p></article>
@@ -84,7 +101,7 @@
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container contact-wrap">
-        <div><div class="section-label">05 / შენი მოგზაურობა</div><h2 id="contact-title">დაგეგმე შენი<br><em>თბილისი.</em></h2><p>შეავსე ფორმა და მიიღე გზამკვლევის დემო-დადასტურება.</p></div>
+        <div><div class="section-label">06 / შენი მოგზაურობა</div><h2 id="contact-title">დაგეგმე შენი<br><em>თბილისი.</em></h2><p>შეავსე ფორმა და მიიღე გზამკვლევის დემო-დადასტურება.</p></div>
         <form id="guide-form" class="guide-form" novalidate>
           <label for="name">სახელი</label><input id="name" name="name" type="text" autocomplete="name" placeholder="შენი სახელი" required>
           <label for="email">ელფოსტა</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
